@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  object-fit: cover;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
+@font-face {
+  font-family: 'oswald';
+  src: url(./font/Oswald.ttf);
+}
+@font-face {
+  font-family: 'vina';
+  src: url(./font/Vina.ttf);
+}
+.oswald {
+  font-family: oswald;
+}
+.vina {
+  font-family: "vina";
+}
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.background img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.3;
+}

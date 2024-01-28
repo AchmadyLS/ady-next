@@ -1,0 +1,67 @@
+.home {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#hero {
+    position: relative;
+    top: 34%;
+    left: 50%;
+    object-fit: cover;
+    filter: hue-rotate(300deg);
+    transform: translate(-50%, -35%);
+    width: 219px;
+    height: 285px;
+}
+
+.slogan {
+    position: absolute;
+    top: 21vh;
+    width: 100vw;
+    height: 370px;
+}
+
+.slogan h3 {
+    z-index: -1;
+    position: relative;
+    font-family: 'vina';
+    margin-bottom: -40px;
+    color: transparent;
+    text-shadow: -1px 1px 0 #1a1a1a,
+        1px 1px 0 #e88504,
+        1px -1px 0 #e88504,
+        -1px -1px 0 #e88504;
+    font-size: 80px;
+}
+
+.slogan h2 {
+    font-family: 'vina';
+    position: relative;
+    color: #FFFFFF;
+    top: 40px;
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.slogan h2:nth-child(5) {
+    color: #e88504;
+}
+
+.slogan h4 {
+    color: #FFFFFF;
+    font-family: 'oswald';
+    position: relative;
+    top: 40px;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.home button {
+    display: none;
+}
